@@ -13,19 +13,6 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QRadioButton" name="radioButton_post">
-   <property name="geometry">
-    <rect>
-     <x>550</x>
-     <y>20</y>
-     <width>89</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>POST</string>
-   </property>
-  </widget>
   <widget class="QLineEdit" name="lineEdit_6">
    <property name="geometry">
     <rect>
@@ -229,10 +216,16 @@
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>200</y>
+     <y>190</y>
      <width>571</width>
      <height>201</height>
     </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
    </property>
    <column>
     <property name="text">
@@ -276,6 +269,19 @@
    </property>
    <property name="text">
     <string>请求数:</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_post">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>20</y>
+     <width>89</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>POST</string>
    </property>
   </widget>
  </widget>

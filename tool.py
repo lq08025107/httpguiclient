@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'tool.ui'
 #
-# Created: Fri Mar 31 09:57:04 2017
+# Created: Fri Mar 31 12:22:59 2017
 #      by: PyQt4 UI code generator 4.10.3
 #
 # WARNING! All changes made in this file will be lost!
@@ -27,9 +27,6 @@ class Ui_Dialog(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName(_fromUtf8("Dialog"))
         Dialog.resize(642, 518)
-        self.radioButton_post = QtGui.QRadioButton(Dialog)
-        self.radioButton_post.setGeometry(QtCore.QRect(550, 20, 89, 16))
-        self.radioButton_post.setObjectName(_fromUtf8("radioButton_post"))
         self.lineEdit_6 = QtGui.QLineEdit(Dialog)
         self.lineEdit_6.setGeometry(QtCore.QRect(210, 470, 51, 21))
         self.lineEdit_6.setObjectName(_fromUtf8("lineEdit_6"))
@@ -81,7 +78,12 @@ class Ui_Dialog(object):
         self.pushButton_select.setGeometry(QtCore.QRect(520, 90, 75, 23))
         self.pushButton_select.setObjectName(_fromUtf8("pushButton_select"))
         self.tableWidget = QtGui.QTableWidget(Dialog)
-        self.tableWidget.setGeometry(QtCore.QRect(30, 200, 571, 201))
+        self.tableWidget.setGeometry(QtCore.QRect(30, 190, 571, 201))
+        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.tableWidget.sizePolicy().hasHeightForWidth())
+        self.tableWidget.setSizePolicy(sizePolicy)
         self.tableWidget.setObjectName(_fromUtf8("tableWidget"))
         self.tableWidget.setColumnCount(6)
         self.tableWidget.setRowCount(0)
@@ -100,13 +102,15 @@ class Ui_Dialog(object):
         self.label_2 = QtGui.QLabel(Dialog)
         self.label_2.setGeometry(QtCore.QRect(260, 20, 54, 12))
         self.label_2.setObjectName(_fromUtf8("label_2"))
+        self.radioButton_post = QtGui.QRadioButton(Dialog)
+        self.radioButton_post.setGeometry(QtCore.QRect(540, 20, 89, 16))
+        self.radioButton_post.setObjectName(_fromUtf8("radioButton_post"))
 
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
 
     def retranslateUi(self, Dialog):
         Dialog.setWindowTitle(_translate("Dialog", "Dialog", None))
-        self.radioButton_post.setText(_translate("Dialog", "POST", None))
         self.radioButton_get.setText(_translate("Dialog", "GET", None))
         self.label_3.setText(_translate("Dialog", "POST DATA", None))
         self.label.setText(_translate("Dialog", "Uri:", None))
@@ -131,4 +135,5 @@ class Ui_Dialog(object):
         item = self.tableWidget.horizontalHeaderItem(5)
         item.setText(_translate("Dialog", "返回结果", None))
         self.label_2.setText(_translate("Dialog", "请求数:", None))
+        self.radioButton_post.setText(_translate("Dialog", "POST", None))
 
